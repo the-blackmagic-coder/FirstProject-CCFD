@@ -1,9 +1,9 @@
-pandas
-numpy
-matplotlib
-seaborn
+pandas==1.5.3
+numpy==1.23.5
+matplotlib==3.7.1
+seaborn==0.12.2
 scikit-learn==1.32.0
 tensorflow==2.10.0
-streamlit
-imblearn
+streamlit==1.32.0
+imbalanced-learn==0.11.0
 protobuff=3.20.3
