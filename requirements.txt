@@ -3,6 +3,7 @@ numpy
 matplotlib
 seaborn
 scikit-learn==1.32.0
-tensorflow==2.11.0
+tensorflow==2.10.0
 streamlit
 imblearn
+protobuff=3.20.3
