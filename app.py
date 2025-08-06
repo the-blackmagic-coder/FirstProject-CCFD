@@ -21,7 +21,7 @@ st.markdown("Upload your transaction data and detect frauds using a Neural Netwo
 # Load model
 @st.cache_resource
 def load_trained_model():
-    return load_model("model/CreditCardFraudDetection.h5")
+    return load_model("CreditCardFraudDetection.h5")
 
 model = load_trained_model()
 
@@ -99,5 +99,6 @@ if uploaded_file:
         ax_f1.grid(True)
         st.write("F1 Score vs Threshold")
         st.pyplot(fig_f1)
+
 
 
