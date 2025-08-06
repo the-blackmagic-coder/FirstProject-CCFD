@@ -21,7 +21,7 @@ st.markdown("Upload your transaction data and detect frauds using a Neural Netwo
 # Load model
 @st.cache_resource
 def load_trained_model():
-    return load_model("model/CreditCardFraudDetection.h5")
+    return load_model("CreditCardFraudDetection.h5")
 
 model = load_trained_model()
 
