@@ -46,7 +46,8 @@ if uploaded_file:
 
     # Drop 'Class' before prediction
     X = df.drop(['Class'], axis=1, errors='ignore')
-
+    input_data=X
+    st.write("Input shape:", input_data.shape)
     # Predict probabilities
     y_probs = model.predict(X).flatten()
 
@@ -99,6 +100,7 @@ if uploaded_file:
         ax_f1.grid(True)
         st.write("F1 Score vs Threshold")
         st.pyplot(fig_f1)
+
 
 
 
