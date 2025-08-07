@@ -60,7 +60,7 @@ if uploaded_file:
     # Show predictions
     df['Fraud Prediction'] = y_pred
     st.subheader("🔍 Prediction Results")
-    st.write(df[['Amount', 'Fraud Prediction']].head(10))
+    st.write(df[['Amount', 'Fraud Prediction']])
 
     # If ground truth is present
     if y_true is not None:
@@ -100,6 +100,7 @@ if uploaded_file:
         ax_f1.grid(True)
         st.write("F1 Score vs Threshold")
         st.pyplot(fig_f1)
+
 
 
 
