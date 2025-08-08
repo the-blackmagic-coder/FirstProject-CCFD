@@ -32,7 +32,7 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
 
     st.subheader("📊 Data Preview")
-    st.write(df.head())
+    st.write(df.head(100))
 
     # Drop Time column if present
     df.drop(['Time'], axis=1, inplace=True, errors='ignore')
@@ -100,6 +100,7 @@ if uploaded_file:
         ax_f1.grid(True)
         st.write("F1 Score vs Threshold")
         st.pyplot(fig_f1)
+
 
 
 
